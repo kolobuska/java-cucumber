@@ -3,6 +3,7 @@ package stepdefs;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
+import org.testng.Assert;
 
 public class MyStepdefs {
 
@@ -14,6 +15,7 @@ public class MyStepdefs {
     @When("^user fills first name with value \"([^\"]*)\"$")
     public void userFillsFirstNameWithValue(String firstName) throws Throwable {
         System.out.println(firstName);
+        Assert.assertTrue(false);
     }
 
 }

@@ -5,9 +5,9 @@ Feature: Form automation
   Scenario Outline: Form submit
     Given user navigates to the app url
     When user fills first name with value "<firstName>"
-    And user fills last name with value "<lastName>"
-    And user fills date of birth with value "<dateOfBirth>"
-    And user click submit button
+#    And user fills last name with value "<lastName>"
+#    And user fills date of birth with value "<dateOfBirth>"
+#    And user click submit button
     Then form is submitted
 
     Examples:
