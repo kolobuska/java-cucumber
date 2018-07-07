@@ -1,21 +1,25 @@
 Feature: Form automation
-  As an student I want to navigate to the test form
-  Fill it and submit
+  As a user I want to fill my form
+  also I submit it
 
-  Scenario Outline: Form submit
+  Scenario Outline: Form filling and submition
     Given user navigates to the app url
-    When user fills first name with value "<firstName>"
-#    And user fills last name with value "<lastName>"
-#    And user fills date of birth with value "<dateOfBirth>"
-#    And user click submit button
+    When user fills first name with value "<firstname>"
+    And user fills last name with value "<lastName>"
+#    And user fills date of birth
+#    And user fills gender
+#    And user fills email
+#    And user fills company
+#    And user fills password
+#    And user fills address
+#    And user submit form
     Then form is submitted
 
     Examples:
-      | firstName | lastName  | dateOfBirth |
-      | Sergii    | Opanasiuk | 02/05/1988  |
-      | Bill      | Murray    | 09/21/1950  |
-      | Hugh      | Laurie    | 06/11/1959  |
-
+      | firstname | lastName  |
+      | Nick      | Jackson   |
+      | Sergii    | Opanasiuk |
+      | Benson    | Kamary    |
 
 
 
