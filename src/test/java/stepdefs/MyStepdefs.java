@@ -1,6 +1,5 @@
 package stepdefs;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -18,7 +17,7 @@ public class MyStepdefs {
 
     @Before
     public void init(){
-        System.setProperty("webdriver.chrome.driver","c:\\Docs\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","c:\\selenium\\chromedriver.exe");
         driver = new ChromeDriver();
         homePage = new HomePage(driver);
     }
